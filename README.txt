@@ -1,44 +1,50 @@
-HEALTH360 WEBSITE — DEPLOYMENT PACKAGE
+SMART HEALTHCARE PORTFOLIO WEBSITE
 Created by Kriti Bhandari
+==================================
+
+WHAT IS INCLUDED
+- Flask application
+- Responsive homepage
+- Interactive Tableau Public dashboard page
+- Interactive Tableau Public story page
+- Shared navigation and styling
 
 PROJECT STRUCTURE
-app.py
-requirements.txt
-templates/
-  base.html
-  index.html
-  dashboard.html
-  story.html
-static/
-  css/
-    style.css
+healthcare_portfolio_website/
+  app.py
+  requirements.txt
+  README.txt
+  templates/
+    base.html
+    index.html
+    dashboard.html
+    story.html
+  static/
+    css/
+      style.css
 
-RUN LOCALLY
-1. Open this folder in VS Code.
-2. In the terminal, run:
-   py -m venv venv
-   venv\Scripts\activate
-   pip install -r requirements.txt
-   python app.py
-3. Visit http://127.0.0.1:5000/
+RUN ON WINDOWS
+1. Extract the ZIP file.
+2. Open the extracted folder in VS Code.
+3. Open Terminal > New Terminal.
+4. (Optional but recommended) Create a virtual environment:
+      py -m venv venv
+      venv\Scripts\activate
+5. Install Flask:
+      pip install -r requirements.txt
+6. Start the website:
+      python app.py
+7. Open:
+      http://127.0.0.1:5000/
 
-PUBLISH ONLINE WITH RENDER
-1. Create/sign in to GitHub and create a new repository.
-2. Upload all files and folders in this package to the repository.
-   Keep the folder structure exactly as shown above.
-3. Sign in to Render and choose New > Web Service.
-4. Connect the GitHub repository.
-5. Set:
-   Language: Python 3
-   Build Command: pip install -r requirements.txt
-   Start Command: gunicorn app:app
-   Instance Type: Free (if offered)
-6. Click Deploy. When the service status becomes Live, copy the
-   public https://....onrender.com URL and share that URL with your teacher.
+TABLEAU
+The dashboard and story are embedded from Tableau Public.
+They must be published and viewable publicly for visitors to see them.
+If you update the Tableau workbook/story URL, edit the iframe src in:
+- templates/dashboard.html
+- templates/story.html
 
-IMPORTANT
-- Do not share http://127.0.0.1:5000/; it only works on your computer.
-- The Tableau dashboard and story are embedded from Tableau Public.
-  Their workbooks/stories must be published with public access.
-- A free Render service may sleep after 15 minutes without visitors.
-  The first visit after sleeping can take about a minute to load.
+NOTE
+This website embeds your Tableau visualizations; it does not upload or
+rebuild the underlying Tableau workbook. The pages need an internet
+connection to load Tableau Public.
