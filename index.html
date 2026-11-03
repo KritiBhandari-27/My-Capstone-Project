@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Health360 | Healthcare Risk Analysis{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="hero-content">
+    <div class="eyebrow"><span class="eyebrow-dot"></span> DATA ANALYTICS CAPSTONE PROJECT</div>
+    <p class="creator-line">A project created by <strong>Kriti Bhandari</strong></p>
+    <h1>Understanding health risks<br><span>through data.</span></h1>
+    <p class="hero-copy">An interactive exploration of healthcare risk factors, patterns and relationships using data visualization.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ url_for('dashboard') }}">Explore Dashboard <span>↗</span></a>
+      <a class="btn btn-secondary" href="{{ url_for('story') }}">View Data Story</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>5,000</strong><span>Dataset records</span></div>
+      <div class="meta-divider"></div>
+      <div><strong>8</strong><span>Visualizations</span></div>
+      <div class="meta-divider"></div>
+      <div><strong>Tableau</strong><span>Visualization tool</span></div>
+    </div>
+  </div>
+  <div class="hero-art" aria-label="Abstract healthcare data illustration">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="data-card card-top"><span class="mini-label">HEALTH DATA</span><div class="pulse-line">⌁⌁⌁⌁⌁</div><small>Patterns · Insights · Analysis</small></div>
+    <div class="medical-orb"><div class="orb-cross">+</div><div class="orb-ring"></div></div>
+    <div class="data-card card-bottom"><span class="mini-label">RISK FACTORS</span><div class="bar-set"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small>Explore the interactive dashboard</small></div>
+    <div class="floating-dot dot-a"></div><div class="floating-dot dot-b"></div>
+  </div>
+</section>
+
+<section class="section intro-section">
+  <div class="section-heading">
+    <span class="eyebrow">PROJECT OVERVIEW</span>
+    <h2>Turning healthcare data<br>into meaningful insights.</h2>
+  </div>
+  <p class="section-description">This project explores a smart healthcare dataset to examine how selected health indicators and risk factors appear across the records. Use the dashboard to interact with the visualizations, then follow the story to explore the analysis in sequence.</p>
+</section>
+
+<section class="feature-grid">
+  <article class="feature-card">
+    <div class="feature-icon">▦</div><span class="feature-number">01 / EXPLORE</span>
+    <h3>Interactive Dashboard</h3>
+    <p>Explore the published Tableau dashboard and interact with its charts and filters.</p>
+    <a href="{{ url_for('dashboard') }}" class="text-link">Open dashboard <span>→</span></a>
+  </article>
+  <article class="feature-card feature-highlight">
+    <div class="feature-icon">⌁</div><span class="feature-number">02 / DISCOVER</span>
+    <h3>Healthcare Data Story</h3>
+    <p>Move through the project story and review the eight visualizations in context.</p>
+    <a href="{{ url_for('story') }}" class="text-link">Explore the story <span>→</span></a>
+  </article>
+  <article class="feature-card">
+    <div class="feature-icon">✳</div><span class="feature-number">03 / UNDERSTAND</span>
+    <h3>Data-driven perspective</h3>
+    <p>Use visual analysis to identify patterns worth further investigation.</p>
+    <a href="{{ url_for('dashboard') }}" class="text-link">View analysis <span>→</span></a>
+  </article>
+</section>
+
+<section class="callout">
+  <div><span class="eyebrow">START EXPLORING</span><h2>See what the data reveals.</h2><p>Open the interactive Tableau experience.</p></div>
+  <a class="btn btn-light" href="{{ url_for('dashboard') }}">Launch dashboard ↗</a>
+</section>
+{% endblock %}
