@@ -13,5 +13,3 @@ My Dashboard For My Capstone Project (https://public.tableau.com/views/SmartHeal
 
 
 My Story For My Capstone Project ( https://public.tableau.com/views/Health360_Healthcare_Analysis/Story1?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link )
-
-My Website For My Capstone Project (https://6k35gpng-5000.inc1.devtunnels.ms/ )
